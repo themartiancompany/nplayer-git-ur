@@ -1,0 +1,24 @@
+pkgbase = nplayer-git
+	pkgdesc = Seamlessly reproduce multimedia on many devices as if they were one.
+	pkgver = 0.0.0.0.0.0.0.0.0.0.0.0.0.1.1.r0.g2c43250c03f18acc35430164e661f05b8ac0ee0f
+	pkgrel = 1
+	url = https://github.com/themartiancompany/nplayer
+	arch = any
+	groups = hip
+	groups = hip-git
+	license = AGPL3
+	checkdepends = shellcheck
+	makedepends = make
+	makedepends = curl
+	makedepends = jq
+	depends = dynssh
+	depends = libcrash-bash
+	depends = media-tools
+	depends = rsync
+	depends = termux-api
+	provides = nplayer=0.0.0.0.0.0.0.0.0.0.0.0.0.1.1.r0.g2c43250c03f18acc35430164e661f05b8ac0ee0f
+	conflicts = nplayer
+	source = nplayer.tar.gz::https://github.com/themartiancompany/nplayer/archive/refs/heads/master.tar.gz
+	sha256sums = SKIP
+
+pkgname = nplayer-git
