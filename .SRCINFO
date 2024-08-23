@@ -11,11 +11,12 @@ pkgbase = nplayer-git
 	makedepends = make
 	makedepends = curl
 	makedepends = jq
+	depends = at
 	depends = dynssh
 	depends = libcrash-bash
 	depends = media-tools
 	depends = rsync
-	depends = termux-api
+	optdepends = termux-api: to open the file using the Android system player
 	provides = nplayer=0.0.0.0.0.0.0.0.0.0.0.0.0.1.1.r0.g2c43250c03f18acc35430164e661f05b8ac0ee0f
 	conflicts = nplayer
 	source = nplayer.tar.gz::https://github.com/themartiancompany/nplayer/archive/refs/heads/master.tar.gz

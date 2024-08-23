@@ -28,6 +28,7 @@ license=(
   AGPL3
 )
 depends=(
+  "at"
   "dynssh"
   "libcrash-bash"
   "media-tools"
@@ -36,18 +37,20 @@ depends=(
 _os="$( \
   uname \
     -o)"
+optdepends=(
+)
 [[ "${_os}" != "GNU/Linux" ]] && \
 [[ "${_os}" == "Android" ]] && \
   depends+=(
-    'termux-api'
+  ) && \
+  optdepends+=(
+    "termux-api: to open the file using the Android system player"
   )
 makedepends=(
   make
 )
 checkdepends=(
   shellcheck
-)
-optdepends=(
 )
 provides=(
   "${_pkgname}=${pkgver}"
